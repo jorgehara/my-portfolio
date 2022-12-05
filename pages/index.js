@@ -11,6 +11,7 @@ export default function Home() {
     <Layout/>
      {/* Header Card */}
      <Head className="row">
+             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
      <div className="col-md-12">
        <div className="card card-body bg-secondary text-light animate__animated animate__fadeIn">
          <div className="row">
@@ -21,8 +22,8 @@ export default function Home() {
              alt="" className="img-fluid" />
            </div>
            <div className="col-md-8">
-             <h1>Ryan Ray</h1>
              <h3>Full Stack Developer</h3>
+             <h1>Ryan Ray</h1>
              <p>
                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                Molestiae atque ullam perferendis harum, nisi porro voluptate,
@@ -135,6 +136,13 @@ export default function Home() {
          </div>
        </div>
      </div>
+     <footer className="bg-dark text-light text-center">
+    <div className="container p-4">
+      <h1>&copy; Ryan Ray Portfolio</h1>
+      <p>2000 - {new Date().getFullYear()}</p>
+      <p>All rights Reserved.</p>
+    </div>
+  </footer>
    </section>
    <Layout/>
    </>
