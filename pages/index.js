@@ -31,7 +31,7 @@ export default function Home({ name }) {
 
 
                 </div>
-                <div className="row justify-content-center bg-gradient bg-opacity-70 col-7 p-3 w-50 h-50">
+                <div className="row justify-content-center bg-gradient bg-opacity-90 col-7 p-3 w-50 h-50">
                   {/* <Image
                     src="/perfil.jpg"
                     width={190}
@@ -39,8 +39,8 @@ export default function Home({ name }) {
                     alt=""
                     className="image-fluid"
                   /> */}
-                  <h1 class="fs-1">Devs Stack Frontend </h1>
                   <h1 class="fs-1">{name}</h1>
+                  <h1 class="fs-2">Development Frontend </h1>
                   <figure class="text-center">
                     <blockquote class="blockquote">
                       <p class="fs-4 mb-0">
