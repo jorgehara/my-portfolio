@@ -11,15 +11,13 @@ export default function Home({ name }) {
     <>
       <Layout />
       {/* Header Card */}
-      <Head className="container-fluid">
+      <Head className="container-fluid text-center">
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <div className="container-fluid p-2">
-        {/* <div className='image-background'
-      style={{height:976, vw:100}}
-      > */}
-          <div className="card card-body bg-secondary text-light">
-              <div className="row align-items-center">
-                <div className="image-background"
+        <div className="container text-center p-2">
+     
+          {/* <div className="card card-body bg-secondary text-light"> */}
+              <div className="row justify-content-around">
+                <div className="col-12"
                 style={{height:203, vw:150}}
                 >
                     <Image
@@ -30,46 +28,50 @@ export default function Home({ name }) {
                     className="img-fluid"
                   />
 
-                {/* </div>
-                <div className="col-2 imgset p-0 m-0 */}
-                
-                {/* "> */}
+
+
                 </div>
-                <div className="col-5 pl-4 ml-3">
-                  <Image
+                <div className="row justify-content-center bg-gradient bg-opacity-70 col-7 p-3 w-50 h-50">
+                  {/* <Image
                     src="/perfil.jpg"
-                    width={200}
+                    width={190}
                     height={190}
                     alt=""
-                    className="img-fluid"
-                  />
-                  <h3>Devs Stack Frontend </h3>
-                  <h1>{name}</h1>
-                  <figure class="text-start">
+                    className="image-fluid"
+                  /> */}
+                  <h1 class="fs-1">Devs Stack Frontend </h1>
+                  <h1 class="fs-1">{name}</h1>
+                  <figure class="text-center">
                     <blockquote class="blockquote">
-                      <p class="mb-0">
+                      <p class="fs-4 mb-0">
                         No te rindas nunca, porque nunca sabes si el próximo
                         intento será el que funcionará.
                       </p>
                     </blockquote>
-                    <figcaption class="blockquote-footer">
+                    <figcaption class="fs-5 blockquote-footer text-white text-center">
                       - Winnie the Pooh <cite title="Source Title"></cite>
                     </figcaption>
                   </figure>
-                  <Link href="/" className="btn btn-outline-light">
+                  <Link href="/" className="btn btn-outline-light col-4">
                     Contact me
                   </Link>
                 </div>
 
+                <div className="row justify-content-around col-5">
+                 
+                </div>
+
+
+
 
               </div>
             </div>
-          </div>
+          {/* </div> */}
         {/* </div> */}
 
       </Head>
       {/* Second section */}
-      <section className="row">
+      {/* <section className="row">
         <div className="col-md-4 p-2">
           {/* <div className="card bg-light animate__animated animate__fadeInLeft">
             {/* <div className="card-body">
@@ -91,8 +93,8 @@ export default function Home({ name }) {
               ))}
             </div> */}
           {/* </div> */}
-        </div>
-        <div className="col-md-8 p-2">
+        {/* </div>
+        <div className="col-md-8 p-2"> */}
           {/* Experience */}
           {/* <div className="card bg-light animate__animated animate__fadeInRight">
             <div className="card-body">
@@ -120,11 +122,11 @@ export default function Home({ name }) {
               </Link>
             </div>
           </div> */}
-        </div>
-      </section>
+        {/* </div> */}
+      {/* // </section> */}
 
  {/* Porfolio */}
-      <section>
+      {/* <section>
         <div className="row">
           <div className="col-md-12">
             <div className="card card-body bg-dark">
@@ -171,7 +173,7 @@ export default function Home({ name }) {
             <p>2020 - {new Date().getFullYear()}</p>
           </div>
         </footer>
-      </section>
+      </section> */}
       <Layout />
     </>
   );
