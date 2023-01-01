@@ -14,119 +14,103 @@ export default function Home({ name }) {
       <Head className="container-fluid text-center">
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <div className="container text-center p-2">
-     
-          {/* <div className="card card-body bg-secondary text-light"> */}
-              <div className="row justify-content-around">
-                <div className="col-12"
-                style={{height:203, vw:150}}
-                >
-                    <Image
-                    src="/imagen2.jpg"
-                    width={1460}
-                    height={250}
-                    alt=""
-                    className="img-fluid"
-                  />
-
-
-
-                </div>
-                <div className="row justify-content-center bg-gradient bg-opacity-90 col-7 p-3 w-50 h-50">
-                  {/* <Image
+          <div className="card card-body bg-secondary text-light">
+            <div className="row justify-content-around">
+              <div className="col-12" style={{ height: 53, vw: 150 }}>
+                <Image
+                  src="/imagen2.jpg"
+                  width={1460}
+                  height={250}
+                  alt=""
+                  className="img-fluid"
+                />
+              </div>
+              <div className="row justify-content-center bg-gradient bg-opacity-90 rounded-1 col-7 p-3 w-50 h-50">
+                {/* <Image
                     src="/perfil.jpg"
                     width={190}
                     height={190}
                     alt=""
+                    
                     className="image-fluid"
                   /> */}
-                  <h1 class="fs-1">{name}</h1>
-                  <h1 class="fs-2">Development Frontend </h1>
-                  <figure class="text-center">
-                    <blockquote class="blockquote">
-                      <p class="fs-4 mb-0">
-                        No te rindas nunca, porque nunca sabes si el próximo
-                        intento será el que funcionará.
-                      </p>
-                    </blockquote>
-                    <figcaption class="fs-5 blockquote-footer text-white text-center">
-                      - Winnie the Pooh <cite title="Source Title"></cite>
-                    </figcaption>
-                  </figure>
-                  <Link href="/" className="btn btn-outline-light col-4">
-                    Contact me
-                  </Link>
-                </div>
-
-                <div className="row justify-content-around col-5">
-                 
-                </div>
-
-
-
-
+                <h1 class="fs-1">{name}</h1>
+                <h1 class="fs-2">Development Frontend </h1>
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="fs-4 mb-0">
+                      No te rindas nunca, porque nunca sabes si el próximo
+                      intento será el que funcionará.
+                    </p>
+                  </blockquote>
+                  <figcaption class="fs-5 blockquote-footer text-white text-center">
+                    - Winnie the Pooh <cite title="Source Title"></cite>
+                  </figcaption>
+                </figure>
+                <Link href="/" className="btn btn-outline-light col-4">
+                  Contact me
+                </Link>
               </div>
+              <div className="row justify-content-around col-5"></div>
             </div>
-          {/* </div> */}
-        {/* </div> */}
-
+          </div>
+        </div>
       </Head>
       {/* Second section */}
-      {/* <section className="row">
-        <div className="col-md-4 p-2">
-          {/* <div className="card bg-light animate__animated animate__fadeInLeft">
-            {/* <div className="card-body">
-              <h1>Skills</h1>
-              {skills.map(({ skill, percentage }, i) => (
-                <div className="py-3" key={i}>
-                  <h5>{skill}</h5>
-                  <div className="progress ">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      style={{ width: `${percentage}%` }}
-                      aria-valuenow="50"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-              ))}
-            </div> */}
-          {/* </div> */}
-        {/* </div>
-        <div className="col-md-8 p-2"> */}
-          {/* Experience */}
-          {/* <div className="card bg-light animate__animated animate__fadeInRight">
-            <div className="card-body">
-              <h1>Experience</h1>
-
-              <ul>
-                {/* List Item Experience */}
-          {/* {experiences.map(({ title, from, to }, index) => (
-                  <li key={index}>
-                    <h3>{title}</h3>
-                    <h5>
-                      {from} {to ? `- ${to}` : "- current"}
-                    </h5>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Sint excepturi ea explicabo. Illum suscipit illo, porro
-                      quisquam voluptatem officiis fugiat vel animi aliquam
-                      inventore rem. Quo laudantium temporibus cupiditate. Aut?
-                    </p>
-                  </li>
-                ))} */}
-          {/* </ul>
-              <Link href="/hireme" className="btn btn-light">
-                Know More
-              </Link>
+      <section className="row justify-content-center">
+        <div className="col-10 p-2">
+          <div className="card bg-light animate__animated animate__fadeInLeft">
+            <div className="col-md-12 my-2">
+              <h1 className="text-center text-dark bg-gradient bg-opacity-90">
+                Projects
+              </h1>
             </div>
-          </div> */}
-        {/* </div> */}
-      {/* // </section> */}
+          </div>
 
- {/* Porfolio */}
-      {/* <section>
+          <div class="row justify-content-center">
+    <div class="col-6">
+          <div class="card text-white bg-dark mb-3 col p-2 m-2 rounded-1" >
+            <div class="card-header text-center fs-4 fw-semibold ">Project One</div>
+            <div class="card-body p-2">
+            <Image
+                    src="/imagen3.jpg"
+                    width={565}
+                    height={240}
+                    alt=""
+                    className="image-fluid m-1"/>
+
+            {/* // // < src="..." class="rounded" alt="..."> */}
+
+              <h4 class="card-title fw-semibold p-2">WebSite make with React.js Bootstrap and Next.Js card title</h4>
+              <p class="card-text p-2 my-1 text-start lh-3">In this project, technologies were used to generate a static website where no more functionality was required than just displaying important information for the client but that was not going to change constantly.
+            <Link
+            href="/" className="btn btn-outline-light bg-gradient rounded-1 text-center lh-sm col-3 m-1 p-1">
+              Know more
+            </Link>
+              </p>
+            </div>
+          </div>
+    </div>
+    <div class="col-6">
+          <div class="card text-white bg-dark mb-3 col p-2 m-2 rounded-1" >
+            <div class="card-header text-center fs-4">Project Two</div>
+            <div class="card-body">
+              <h4 class="card-title">Secondary card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>
+            </div>
+          </div>
+ 
+    </div>
+  </div>
+
+
+
+
+        </div>
+      </section>
+
+      {/* Porfolio */
+      /* <section>
         <div className="row">
           <div className="col-md-12">
             <div className="card card-body bg-dark">
@@ -173,7 +157,8 @@ export default function Home({ name }) {
             <p>2020 - {new Date().getFullYear()}</p>
           </div>
         </footer>
-      </section> */}
+                </section> */}
+
       <Layout />
     </>
   );
