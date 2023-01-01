@@ -84,7 +84,7 @@ export default function Home({ name }) {
                     className="image-fluid m-1"
                   />
                   <h4 class="card-title fw-semibold p-2">
-                    WebSite make with React.js Bootstrap and Next.Js card title
+                    WebSite make with React.js Bootstrap and Next.Js
                   </h4>
                   <p class="card-text p-2 my-1 text-start lh-3">
                     In this project, technologies were used to generate a static
