@@ -67,45 +67,75 @@ export default function Home({ name }) {
             </div>
           </div>
 
+
+{/* Start List of Projects */}
           <div class="row justify-content-center">
-    <div class="col-6">
-          <div class="card text-white bg-dark mb-3 col p-2 m-2 rounded-1" >
-            <div class="card-header text-center fs-4 fw-semibold ">Project One</div>
-            <div class="card-body p-2">
-            <Image
+            <div class="col-6">
+              <div class="card text-white bg-dark mb-3 col p-2 m-2 rounded-1">
+                <div class="card-header text-center fs-4 fw-semibold ">
+                  Project One
+                </div>
+                <div class="card-body p-2">
+                  <Image
                     src="/imagen3.jpg"
                     width={565}
                     height={240}
                     alt=""
-                    className="image-fluid m-1"/>
-
-            {/* // // < src="..." class="rounded" alt="..."> */}
-
-              <h4 class="card-title fw-semibold p-2">WebSite make with React.js Bootstrap and Next.Js card title</h4>
-              <p class="card-text p-2 my-1 text-start lh-3">In this project, technologies were used to generate a static website where no more functionality was required than just displaying important information for the client but that was not going to change constantly.
-            <Link
-            href="/" className="btn btn-outline-light bg-gradient rounded-1 text-center lh-sm col-3 m-1 p-1">
-              Know more
-            </Link>
-              </p>
+                    className="image-fluid m-1"
+                  />
+                  <h4 class="card-title fw-semibold p-2">
+                    WebSite make with React.js Bootstrap and Next.Js card title
+                  </h4>
+                  <p class="card-text p-2 my-1 text-start lh-3">
+                    In this project, technologies were used to generate a static
+                    website where no more functionality was required than just
+                    displaying important information for the client but that was
+                    not going to change constantly.
+                    <Link
+                      href="/"
+                      className="btn btn-outline-light bg-gradient rounded-1 text-center lh-sm col-3 m-1 p-1"
+                    >
+                      Know more
+                    </Link>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-    </div>
-    <div class="col-6">
-          <div class="card text-white bg-dark mb-3 col p-2 m-2 rounded-1" >
-            <div class="card-header text-center fs-4">Project Two</div>
-            <div class="card-body">
-              <h4 class="card-title">Secondary card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>
+            <div class="col-6">
+              <div class="card text-white bg-dark mb-3 col p-2 m-2 rounded-1">
+                <div class="card-header text-center fs-4 fw-semibold ">
+                  Project Two
+                </div>
+                <div class="card-body p-2">
+                  <Image
+                    src="/imagen1.jpg"
+                    width={565}
+                    height={240}
+                    alt=""
+                    className="image-fluid m-1"
+                  />
+                  <h4 class="card-title fw-semibold p-2">
+                    Dashboard simple para manejo de formularios con React.Js Reddux and Bootstrap
+                  </h4>
+                  <p class="card-text p-2 my-1 text-start lh-3">
+                    In this project, technologies were used to generate a static
+                    website where no more functionality was required than just
+                    displaying important information for the client but that was
+                    not going to change constantly.
+                    <Link
+                      href="/"
+                      className="btn btn-outline-light bg-gradient rounded-1 text-center lh-sm col-3 m-1 p-1"
+                    >
+                      Know more
+                    </Link>
+                  </p>
+                </div>
+              </div>
             </div>
+
+
+
           </div>
- 
-    </div>
-  </div>
-
-
-
-
         </div>
       </section>
 
