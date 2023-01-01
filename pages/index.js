@@ -108,20 +108,17 @@ export default function Home({ name }) {
                 </div>
                 <div class="card-body p-2">
                   <Image
-                    src="/imagen1.jpg"
+                    src="/imagenDash1.jpg"
                     width={565}
                     height={240}
                     alt=""
                     className="image-fluid m-1"
                   />
                   <h4 class="card-title fw-semibold p-2">
-                    Dashboard simple para manejo de formularios con React.Js Reddux and Bootstrap
+                  Simple Dashboard for manage of the forms with React.Js Redux and Bootstrap
                   </h4>
                   <p class="card-text p-2 my-1 text-start lh-3">
-                    In this project, technologies were used to generate a static
-                    website where no more functionality was required than just
-                    displaying important information for the client but that was
-                    not going to change constantly.
+                  In this project, technologies will be used to generate a dynamic web site which will require more completeness in the functionality to handle the data of the formularies that the client requests.
                     <Link
                       href="/"
                       className="btn btn-outline-light bg-gradient rounded-1 text-center lh-sm col-3 m-1 p-1"
