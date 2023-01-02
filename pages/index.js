@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import CardsProjects from "../components/CardsProjects";
 import Layout from "../components/Layout";
-import { experiences, projects, skills } from "../profile";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ name }) {

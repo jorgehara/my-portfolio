@@ -6,7 +6,7 @@ import nProgress from "nprogress";
 import classNames from "classnames";
 
 const Layout = ({ children, title, footer = true, dark = false }) => {
-  const router = useRouter();
+  // const router = useRouter();
 
   // useEffect(() => {
   //   const handleRouteChange = (url) => {
