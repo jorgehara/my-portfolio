@@ -14,8 +14,8 @@ export default function Home({ name }) {
       {/* Header Card */}
       <Head className="container-fluid text-center">
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <div className="container text-center p-2">
-          <div className="card card-body bg-secondary text-light">
+        <div className="container text-center ">
+          <div className=" bg-black text-light">
             <div className="row justify-content-around">
               <div className="col-12" style={{ height: 53, vw: 150 }}>
                 <Image
@@ -50,20 +50,24 @@ export default function Home({ name }) {
         </div>
       </Head>
       {/* Second section */}
-      <div className="container ">
+      <div className="container mt-5 pt-5 ">
         <section className="row justify-content-center">
-          <div className="col-12 p-2">
+          <div className="col-12 justify-content-center">
             <div className="card bg-light animate__animated animate__fadeInLeft">
-              <div className="col-md-12 my-2">
+              <div className="col-md-12">
                 <h1 className="text-center text-dark bg-gradient bg-opacity-90">
                   Projects
                 </h1>
               </div>
             </div>
-            {/* Start List of Projects */}
-            <CardsProjects />
           </div>
         </section>
+            {/* Start List of Projects */}
+          <div className="col-md-12 justify-content-center">
+          <div className="col-md-12 justify-content-center ">
+            <CardsProjects />
+            </div>
+            </div>
       </div>
       <Layout />
     </>
