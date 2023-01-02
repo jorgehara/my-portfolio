@@ -1,8 +1,5 @@
 // import { useEffect } from "react";
-import { useRouter } from "next/router";
 import PropTypes from "prop-types";
-import NProgress from "nprogress";
-import nProgress from "nprogress";
 import classNames from "classnames";
 
 const Layout = ({ children, title, footer = true, dark = false }) => {
