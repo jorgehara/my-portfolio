@@ -1,8 +1,11 @@
 // import { useEffect } from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import classNames from "classnames";
 
-const Layout = ({ children, title, footer = true, dark = false }) => {
+const Layout = ({children}) => {
+// (
+//   // { children, title, footer = true, dark = false }
+//   ) => {
   // const router = useRouter();
 
   // useEffect(() => {
@@ -23,16 +26,22 @@ const Layout = ({ children, title, footer = true, dark = false }) => {
   // }, []);
 
   return (
-    <div className={classNames({ "bg-dark": dark, "bg-light": !dark })}>
+    <div 
+    // className={
+    //   classNames(
+    //   { "bg-dark": dark, "bg-light": !dark }
+    //   )
+    //   }
+      >
       {children}
     </div>
   );
 };
 
-Layout.proptypes = {
-  children: PropTypes.node,
-  title: PropTypes.string,
-  // footer: PropTypes.bool,
-};
+// Layout.proptypes = {
+//   children: PropTypes.node,
+//   title: PropTypes.string,
+//   // footer: PropTypes.bool,
+// };
 
 export default Layout;
