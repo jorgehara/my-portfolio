@@ -57,8 +57,11 @@ export default function Home({ name }) {
         </div>
       </Head>
       {/* Second section */}
+      
+      
+      <div className="container ">
       <section className="row justify-content-center">
-        <div className="col-10 p-2">
+        <div className="col-12 p-2">
           <div className="card bg-light animate__animated animate__fadeInLeft">
             <div className="col-md-12 my-2">
               <h1 className="text-center text-dark bg-gradient bg-opacity-90">
@@ -71,7 +74,7 @@ export default function Home({ name }) {
 {/* Start List of Projects */}
           <div class="row justify-content-center">
             <div class="col-6">
-              <div class="card text-white bg-dark mb-3 col p-2 m-2 rounded-1">
+              <div class="card text-white bg-dark mb-3 col p-2 m-2 w-100 h-80 rounded-1">
                 <div class="card-header text-center fs-4 fw-semibold ">
                   Project One
                 </div>
@@ -102,7 +105,7 @@ export default function Home({ name }) {
               </div>
             </div>
             <div class="col-6">
-              <div class="card text-white bg-dark mb-3 col p-2 m-2 rounded-1">
+              <div class="card text-white bg-dark mb-3 col p-2 m-2 w-100 h-80 rounded-1">
                 <div class="card-header text-center fs-4 fw-semibold ">
                   Project Two
                 </div>
@@ -135,57 +138,8 @@ export default function Home({ name }) {
           </div>
         </div>
       </section>
-
-      {/* Porfolio */
-      /* <section>
-        <div className="row">
-          <div className="col-md-12">
-            <div className="card card-body bg-dark">
-              <div className="row">
-                <div className="col-md-12 my-2">
-                  <h1 className="text-center text-light">Portfolio</h1>
-                </div>
-                {projects.map(({ name, description, image }, index) => (
-                  <div className="col-md-4 p-2" key={index}>
-                    <div className="card h-100">
-                      <div className="overflow">
-                        <Image
-                          src={`/${image}`}
-                          width={220}
-                          height={220}
-                          alt=""
-                          className="card-img-top"
-                        />
-                      </div>
-                      <div className="card-body">
-                        <h3>{name}</h3>
-                        <p>{description}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-
-                <div className="col-md-12 mt-4">
-                  <div className="text-center">
-                    <Link href="/" className="btn btn-outline-light">
-                      More Projects
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <footer className="bg-dark text-light text-center">
-          <div className="container p-4">
-            <h1>&copy; {name}</h1>
-            <p>2020 - {new Date().getFullYear()}</p>
-          </div>
-        </footer>
-                </section> */}
-
+      
+      </div>
       <Layout />
     </>
   );
