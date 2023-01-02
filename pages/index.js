@@ -16,7 +16,9 @@ export default function Home({ name }) {
         <div className="container text-center ">
           <div className=" bg-black text-light">
             <div className="row justify-content-around">
-              <div className="col-12" style={{ height: 53, vw: 150 }}>
+              <div className="col-12" 
+              // style={{ height: 53, vw: 150 }}
+              >
                 <Image
                   src="/imagen2.jpg"
                   width={1460}

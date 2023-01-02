@@ -11,11 +11,11 @@ const Layout = ({ children, title, footer = true, dark = false }) => {
   //     NProgress.start();
   //   };
 
-    // router.events.on("routeChangeStart", handleRouteChange);
+  // router.events.on("routeChangeStart", handleRouteChange);
 
-    // router.events.on("routeChangeComplete", () => NProgress.done());
+  // router.events.on("routeChangeComplete", () => NProgress.done());
 
-    // router.events.on("routeChangeError", () => nProgress.done());
+  // router.events.on("routeChangeError", () => nProgress.done());
 
   //   return () => {
   //     // router.events.off("routeChangeStart", handleRouteChange);
@@ -24,10 +24,8 @@ const Layout = ({ children, title, footer = true, dark = false }) => {
 
   return (
     <div className={classNames({ "bg-dark": dark, "bg-light": !dark })}>
-        
       {children}
     </div>
-    
   );
 };
 

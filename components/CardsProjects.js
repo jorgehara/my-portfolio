@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import { ErrorBoundary } from "./ErrorBoundary";
 
 export default function CardsProjects() {
   return (
     <>
-     <ErrorBoundary>
       <div class="row justify-content-center">
         <div class="col-md-6 justify-content-center">
           <div class="card text-white bg-dark col w-100 h-80 rounded-1">
@@ -71,7 +69,6 @@ export default function CardsProjects() {
           </div>
         </div>
       </div>
-      </ErrorBoundary>
     </>
   );
 }
