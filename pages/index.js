@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import CardsProjects from "../components/CardsProjects";
 import Layout from "../components/Layout";
 import { experiences, projects, skills } from "../profile";
 import styles from "../styles/Home.module.css";
@@ -26,16 +27,8 @@ export default function Home({ name }) {
                 />
               </div>
               <div className="row justify-content-center bg-gradient bg-opacity-90 rounded-1 col-7 p-3 w-50 h-50">
-                {/* <Image
-                    src="/perfil.jpg"
-                    width={190}
-                    height={190}
-                    alt=""
-                    
-                    className="image-fluid"
-                  /> */}
                 <h1 class="fs-1">{name}</h1>
-                <h1 class="fs-2">Development Frontend </h1>
+                <h1 class="fs-2">Development Frontend</h1>
                 <figure class="text-center">
                   <blockquote class="blockquote">
                     <p class="fs-4 mb-0">
@@ -57,88 +50,20 @@ export default function Home({ name }) {
         </div>
       </Head>
       {/* Second section */}
-      
-      
       <div className="container ">
-      <section className="row justify-content-center">
-        <div className="col-12 p-2">
-          <div className="card bg-light animate__animated animate__fadeInLeft">
-            <div className="col-md-12 my-2">
-              <h1 className="text-center text-dark bg-gradient bg-opacity-90">
-                Projects
-              </h1>
-            </div>
-          </div>
-
-
-{/* Start List of Projects */}
-          <div class="row justify-content-center">
-            <div class="col-6">
-              <div class="card text-white bg-dark mb-3 col p-2 m-2 w-100 h-80 rounded-1">
-                <div class="card-header text-center fs-4 fw-semibold ">
-                  Project One
-                </div>
-                <div class="card-body p-2">
-                  <Image
-                    src="/imagen3.jpg"
-                    width={565}
-                    height={240}
-                    alt=""
-                    className="image-fluid m-1"
-                  />
-                  <h4 class="card-title fw-semibold p-2">
-                    WebSite make with React.js Bootstrap and Next.Js
-                  </h4>
-                  <p class="card-text p-2 my-1 text-start lh-3">
-                    In this project, technologies were used to generate a static
-                    website where no more functionality was required than just
-                    displaying important information for the client but that was
-                    not going to change constantly.
-                    <Link
-                      href="/"
-                      className="btn btn-outline-light bg-gradient rounded-1 text-center lh-sm col-3 m-1 p-1"
-                    >
-                      Know more
-                    </Link>
-                  </p>
-                </div>
+        <section className="row justify-content-center">
+          <div className="col-12 p-2">
+            <div className="card bg-light animate__animated animate__fadeInLeft">
+              <div className="col-md-12 my-2">
+                <h1 className="text-center text-dark bg-gradient bg-opacity-90">
+                  Projects
+                </h1>
               </div>
             </div>
-            <div class="col-6">
-              <div class="card text-white bg-dark mb-3 col p-2 m-2 w-100 h-80 rounded-1">
-                <div class="card-header text-center fs-4 fw-semibold ">
-                  Project Two
-                </div>
-                <div class="card-body p-2">
-                  <Image
-                    src="/imagenDash1.jpg"
-                    width={565}
-                    height={240}
-                    alt=""
-                    className="image-fluid m-1"
-                  />
-                  <h4 class="card-title fw-semibold p-2">
-                  Simple Dashboard for manage of the forms with React.Js Redux and Bootstrap
-                  </h4>
-                  <p class="card-text p-2 my-1 text-start lh-3">
-                  In this project, technologies will be used to generate a dynamic web site which will require more completeness in the functionality to handle the data of the formularies that the client requests.
-                    <Link
-                      href="/"
-                      className="btn btn-outline-light bg-gradient rounded-1 text-center lh-sm col-3 m-1 p-1"
-                    >
-                      Know more
-                    </Link>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
-
+            {/* Start List of Projects */}
+            <CardsProjects />
           </div>
-        </div>
-      </section>
-      
+        </section>
       </div>
       <Layout />
     </>
