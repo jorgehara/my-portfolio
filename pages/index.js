@@ -43,10 +43,27 @@ export default function Home({ name }) {
               <div className="row justify-content-around col-5"></div>
             </div>
           </div>
+          <div className="row justify-content-center bg-gradient bg-opacity-90 rounded-1 col-7 p-3 w-50 h-50">
+                <h1 class="fs-1">{name}</h1>
+                <h1 class="fs-2">Development Frontend</h1>
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="fs-4 mb-0">
+                      No te rindas nunca, porque nunca sabes si el próximo
+                      intento será el que funcionará.
+                    </p>
+                  </blockquote>
+                  <figcaption class="fs-5 blockquote-footer text-white text-center">
+                    - Winnie the Pooh <cite title="Source Title"></cite>
+                  </figcaption>
+                </figure>
+                <Link href="/" className="btn btn-outline-light col-4">
+                  Contact me
+                </Link>
+              </div>
         </div>
-      </Head>
       {/* Second section */}
-      <div className="container mt-5 pt-5 ">
+      {/* <div className="container mt-5 pt-5 ">
         <section className="row justify-content-center">
           <div className="col-12 justify-content-center">
             <div className="card card bg-light animate__animated animate__fadeInLeft">
@@ -59,7 +76,7 @@ export default function Home({ name }) {
           </div>
         </section>
             {/* Start List of Projects */}
-          <div className="col-md-12 justify-content-center">
+          {/* <div className="col-md-12 justify-content-center">
           <div className="col-md-12 justify-content-center ">
 
           <div class="row justify-content-center">
@@ -129,8 +146,10 @@ export default function Home({ name }) {
 
 
             </div>
-            </div>
-      </div>
+            </div> */}
+      {/* </div> */} 
+      </Head>
+
     </>
   );
 }
